@@ -375,8 +375,20 @@ body {
   }
 }
 
+.hero-img {
+  position: relative;
+}
 .hero-overlay {
   z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   .hero-overlay h1 {
@@ -384,20 +396,10 @@ body {
     padding: 0.5rem 1rem;
     line-height: 1.1;
   }
-  .hero-overlay {
-    top: 60% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 100%;
-    padding: 0 0.5rem;
-  }
 }
 @media (max-width: 480px) {
   .hero-overlay h1 {
     font-size: 1.3rem !important;
     padding: 0.3rem 0.5rem;
-  }
-  .hero-overlay {
-    top: 65% !important;
-    padding: 0 0.2rem;
   }
 } 
