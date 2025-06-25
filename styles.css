@@ -373,4 +373,31 @@ body {
   .footer-contact-text {
     font-size: 0.95rem;
   }
+}
+
+.hero-overlay {
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem !important;
+    padding: 0.5rem 1rem;
+    line-height: 1.1;
+  }
+  .hero-overlay {
+    top: 60% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-overlay h1 {
+    font-size: 1.3rem !important;
+    padding: 0.3rem 0.5rem;
+  }
+  .hero-overlay {
+    top: 65% !important;
+    padding: 0 0.2rem;
+  }
 } 
